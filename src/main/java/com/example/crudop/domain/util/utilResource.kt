@@ -1,4 +1,4 @@
-package com.example.crudop.domain.repository.util
+package com.example.crudop.domain.util
 
 import com.example.crudop.data.model.PostModel
 import java.util.UUID

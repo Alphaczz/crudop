@@ -7,19 +7,15 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.viewModels
-import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.viewModelScope
 import com.example.crudop.MainActivity
-import com.example.crudop.data.model.PostModel
 import com.example.crudop.databinding.ActivityCreatePostBinding
-import com.example.crudop.domain.repository.util.createPost
+import com.example.crudop.domain.util.createPost
 import com.example.crudop.presentation.viewmodel.CreatePostViewModel
-import com.example.crudop.presentation.viewmodel.PostViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import java.util.UUID
+
 @AndroidEntryPoint
 class CreatePost : AppCompatActivity() {
     private  val viewModel: CreatePostViewModel by viewModels()
